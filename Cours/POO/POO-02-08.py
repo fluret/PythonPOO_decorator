@@ -1,0 +1,2 @@
+sample_instance._SampleClass__value
+sample_instance._SampleClass__method()

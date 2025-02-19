@@ -1,0 +1,8 @@
+result = make_greeting("Benjamin")
+print(result)
+print('*'*20)
+result = make_greeting("Juan", age=114)
+print(result)
+print('*'*20)
+result = make_greeting(name="Maria", age=116)
+print(result)
