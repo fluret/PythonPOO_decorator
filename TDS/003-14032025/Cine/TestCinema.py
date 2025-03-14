@@ -1,0 +1,22 @@
+from cine import SalleCinema
+
+
+salle1 = SalleCinema("Les bronzés 2", 120, 8.5)
+salle2 = SalleCinema("La dolce vita", 50, 7.5)
+print(salle1)
+print('*'*20)
+print(salle2)
+print('*'*20)
+salle1.vendre_places(2, False)
+salle1.vendre_places(3, True)
+salle2.vendre_places(3, False)
+salle2.vendre_places(6, True)
+print(salle1)
+print('*'*20)
+print(salle2)
+print('*'*20)
+print(f"Chiffre d'affaires : {salle1.chiffre_affaires():.2f} €")
+print(f"Taux de remplissage : {salle1.taux_remplissage():.2f} %")
+print('*'*20)
+print(f"Chiffre d'affaires : {salle2.chiffre_affaires():.2f} €")
+print(f"Taux de remplissage : {salle2.taux_remplissage():.2f} %")

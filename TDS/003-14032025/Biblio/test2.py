@@ -1,0 +1,20 @@
+from biblio import Bibliotheque
+from livre import Livre
+
+ma_bibli = Bibliotheque()
+livre1 = Livre("Les Misérables", "Victor Hugo", 3)
+livre2 = Livre("Les fleurs du mal", "Charles Baudelaire", 1)
+ma_bibli.ajoute(livre1)
+ma_bibli.ajoute(livre2)
+#print(livre1)
+print(ma_bibli.livres[0])
+print('*'*10)
+#livre2.degrade()
+ma_bibli.livres[1].degrade()
+#print(livre2)
+print(ma_bibli.livres[1])
+print('*'*10)
+ma_bibli.inventaire()
+print('*'*10)
+ma_bibli.supprime_livres_abimes()
+ma_bibli.inventaire()
